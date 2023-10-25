@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./scrips/index.js"></script>
     <title>Document</title>
+
 </head>
 <body>
-    
+    <section id="sec1">
+        <div>
+            <h2>Destacados</h2>
+            <p>de la semana</p>
+            
+        </div>
+        <img src="../assets/leer.svg" alt="">
+
+        <div>
+            <div class="opciones">
+                <div class="opcion activada" style="--optionBackground: url(https://raw.githubusercontent.com/Programith/Images/main/background_01.jpg)";>
+                    <div class="label">
+                        <div class="iconos">
+                            <i class="fas-1"></i>
+                        </div>
+                        <div class="info">
+                            <div class="central">Genero 1</div>
+                            <div class="sub">Alguna descripcion</div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="opcion" style="--optionBackground: url(https://raw.githubusercontent.com/Programith/Images/main/background_02.jpg);">
+                    <div class="label">
+                        <div class="iconos">
+                            <i class="fas-2"></i>
+                        </div>
+                        <div class="info">
+                            <div class="central">Genero 2</div>
+                            <div class="sub">Alguna descripcion</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcion" style="--optionBackground: url(https://raw.githubusercontent.com/Programith/Images/main/background_03.jpg);">
+                    <div class="label">
+                        <div class="iconos">
+                            <i class="fas-3"></i>
+                        </div>
+                        <div class="info">
+                            <div class="central">Genero 3</div>
+                            <div class="sub">Alguna descripcion</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcion" style="--optionBackground: url(https://raw.githubusercontent.com/Programith/Images/main/background_04.jpg);">
+                    <div class="label">
+                        <div class="iconos">
+                            <i class="fas-4"></i>
+                        </div>
+                        <div class="info">
+                            <div class="central">Genero 4</div>
+                            <div class="sub">Alguna descripcion</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcion" style="--optionBackground: url(https://raw.githubusercontent.com/Programith/Images/main/background_05.jpg);">
+                    <div class="label">
+                        <div class="iconos">
+                            <i class="fas-5"></i>
+                        </div>
+                        <div class="info">
+                            <div class="central">Genero</div>
+                            <div class="sub">Alguna descripcion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(".opcion").click(function () {
+                    $(".opcion").removeClass("activada");
+                    $(this).addClass("activada");
+                });
+            </script>
+        </div>
+    </section>
+
+    <section id="sec2">
+
+        <div class="contenedor-scroller">
+            <div class="scroller">
+                <article class="tarjeta">
+                    <img src="../assets/1.svg" alt="" class="tarjeta-imagen">
+                    <div class="cuerpo-tarjeta">
+                        <h2 class="titulo-tar" id="titulo-tar">Titulo libro</h2>
+                        <div class="autor-detalle">
+                            <span class="nombre-autor" id="nombre-autor">Nombre Autor</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec3">
+        <div>
+            <h2>Seccion 3</h2>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+    </section>
 </body>
 </html>
