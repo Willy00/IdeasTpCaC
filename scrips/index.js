@@ -27,6 +27,13 @@ fetch('https://openlibrary.org/works/OL45804W/editions.json')
                 imagen.src = coverURL;
             }
         }
+            // Construye la URL de la página en Open Library utilizando la clave única
+            const openLibraryURL = `https://openlibrary.org/works/${item.works[0].key}`;
+            
+            // Crea un enlace que rodea la tarjeta y apunta a la página del libro en Open Library
+            const enlace = document.createElement("a");
+            enlace.href = openLibraryURL;
+            enlace.appendChild(tarjeta);
 
         // Agrega la tarjeta clonada al contenedor de scroller
         scroller.appendChild(tarjeta);

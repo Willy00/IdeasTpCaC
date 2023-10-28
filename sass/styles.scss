@@ -153,7 +153,7 @@ section:nth-child(3){
 
 .contenedor-scroller{
     position: relative;
-    max-width: max-content;
+    max-width: 100%;
 }
 .contenedor-scroller ::before, .contenedor-scroller ::after{
     content: "";
@@ -166,11 +166,11 @@ section:nth-child(3){
 }
 .contenedor-scroller ::before{
     left: 0;
-    background-image: linear-gradient(to right, #e8eaee, transparent);
+    background-image: linear-gradient(to right, transparent, transparent);
 }
 .contenedor-scroller ::after{
     right: 0;
-    background-image: linear-gradient(to left, e8eaee, transparent);
+    background-image: linear-gradient(to left, transparent, transparent);
 }
 .scroller{
     display: flex;
@@ -179,6 +179,8 @@ section:nth-child(3){
     overflow: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    margin-left: 1.8rem;
 }
 .scroller::-webkit-scrollbar{
     height: 0.5rem;
