@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Resumen de Libro</title>
+</head>
+<body>
+    <div class="encabezado">
+        <h1>Resumen de Libros</h1>
+    </div>
+
+    <div class="content">
+        <h2 id="titulo">Título</h2>
+        <p id="autor">Autor: Nombre del Autor</p>
+        <p id="genero">Género: Género del Libro</p>
+
+        <div class="summary">
+            <h3>Resumen</h3>
+            <p id="resumen">.</p>
+        </div>
+    </div>
+
+    <!-- Enlaces a los libros -->
+    <div>
+        <a href="#" id="enlaceLibro1">Libro 1</a>
+        <a href="#" id="enlaceLibro2">Libro 2</a>
+    </div>
+
+    <script>
+        var libro1 = {
+            "titulo": "Holly",
+            "autor": "Stephen King",
+            "genero": "Género 1",
+            "resumen": "Holly Gibney; uno de los personajes más cautivadores e ingeniosos de Stephen King; regresa en esta trepidante novela para descubrir la verdad que se esconde tras múltiples desapariciones en una ciudad del Medio Oeste. Cuando Penny Dahl contacta con Finders Keepers para que la ayuden a encontrar a su hija; algo en la voz desesperada de la mujer hace que Holly Gibney se vea obligada a aceptar el trabajo. A poca distancia del lugar en el que Bonnie Dahl desapareció; viven los profesores Rodney y Emily Harris. Son la quintaesencia de la respetabilidad burguesa: un matrimonio octogenario y dedicado de académicos semirretirados. Nadie diría que; en el sótano de su impecable casa forrada de libros; esconden un secreto directamente relacionado con la desaparición de Bonnie. Sin embargo; los Harris son astutos; pacientes y despiadados; y obligarán a Holly a emplear sus habilidades al máximo y a arriesgarlo todo si quiere cerrar el caso más oscuro al que se ha enfrentado jamás. «No podía olvidarme de Holly Gibney. Se suponía que solo iba a ser un personaje secundario en Mr. Mercedes; pero se llevó toda la atención y mi corazón. Holly es ella en estado puro». "
+            
+        };
+
+        var libro2 = {
+            "titulo": "Libro 2",
+            "autor": "Autor 2",
+            "genero": "Género 2",
+            "resumen": "Resumen del Libro 2"
+        };
+
+        // Función para mostrar la información del libro
+        function mostrarLibro(libro) {
+            document.getElementById("titulo").textContent = libro.titulo;
+            document.getElementById("autor").textContent = "Autor: " + libro.autor;
+            document.getElementById("genero").textContent = "Género: " + libro.genero;
+            document.getElementById("resumen").textContent = libro.resumen;
+        }
+
+        // Manejadores de clic para los enlaces
+        document.getElementById("enlaceLibro1").addEventListener("click", function () {
+            mostrarLibro(libro1);
+        });
+
+        document.getElementById("enlaceLibro2").addEventListener("click", function () {
+            mostrarLibro(libro2);
+        });
+
+        // Mostrar el primer libro por defecto
+        mostrarLibro(libro1);
+    </script>
+</body>
+</html>

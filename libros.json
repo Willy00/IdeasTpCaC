@@ -1,0 +1,37 @@
+[
+    {
+        "titulo": "Holly",
+        "autor": "Autor 1",
+        "genero": "Género 1",
+        "portada": "portada1.jpg",
+        "resumen": "Resumen del Libro 1"
+    },
+    {
+        "titulo": "Libro 2",
+        "autor": "Autor 2",
+        "genero": "Género 2",
+        "portada": "portada2.jpg",
+        "resumen": "Resumen del Libro 2"
+    },
+    {
+        "titulo": "Libro 3",
+        "autor": "Autor 3",
+        "genero": "Género 3",
+        "portada": "portada3.jpg",
+        "resumen": "Resumen del Libro 3"
+    },
+    {
+        "titulo": "Libro 4",
+        "autor": "Autor 4",
+        "genero": "Género 4",
+        "portada": "portada4.jpg",
+        "resumen": "Resumen del Libro 4"
+    },
+    {
+        "titulo": "Libro 5",
+        "autor": "Autor 5",
+        "genero": "Género 5",
+        "portada": "portada5.jpg",
+        "resumen": "Resumen del Libro 5"
+    }
+]

@@ -62,3 +62,4 @@ function validarFormulario() {
 
     return true; // Permite que el formulario se envíe si pasa todas las validaciones
 }
+
