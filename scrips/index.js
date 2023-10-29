@@ -40,3 +40,25 @@ fetch('https://openlibrary.org/works/OL45804W/editions.json')
     });
 })
 .catch(error => console.error("Error al cargar el archivo JSON: " + error));
+
+function validarFormulario() {
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var telefono = document.getElementById("telefono").value;
+    var email = document.getElementById("email").value;
+
+    if (nombre === "" || apellido === "" || telefono === "" || email === "") {
+        alert("Por favor, complete todos los campos.");
+        return false; // Evita que el formulario se envíe
+    }
+
+    // Validar el formato del número de teléfono (solo números)
+    if (!/^\d+$/.test(telefono)) {
+        alert("El número de teléfono debe contener solo dígitos.");
+        return false;
+    }
+
+    
+
+    return true; // Permite que el formulario se envíe si pasa todas las validaciones
+}
